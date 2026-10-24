@@ -1,0 +1,21 @@
+{
+  "name": "lnt-nodejs",
+  "version": "1.0.0",
+  "description": "l and t course on Node.js - The Complete Guide",
+  "homepage": "https://github.com/basilpeter01/lnt-nodejs#readme",
+  "bugs": {
+    "url": "https://github.com/basilpeter01/lnt-nodejs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basilpeter01/lnt-nodejs.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
