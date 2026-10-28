@@ -1,14 +1,15 @@
 const express = require('express');
 const app = express();
 
-app.use((req, res, next) => {
-    console.log("hello from first");
-    next();
-})
+const adminRoutes = require('./routes/admin')
+const shopRoutes = require('./routes/shop')
+
+app.use('/admin', adminRoutes)
+app.use(shopRoutes)
 
 app.use((req, res, next) => {
-    console.log("hello from second")
-    res.send("<h1>inside the middleware</h1>")
+    res.status(404).send("<h1>page not found</h1>")
 })
+
 
 app.listen(3000)
